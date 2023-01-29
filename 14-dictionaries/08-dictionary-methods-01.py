@@ -1,4 +1,4 @@
-# Dictionary methods: .clear(), .copy()
+# Dictionary methods: .clear(), .copy(), .fromkeys(), .get()
 
 # .clear() = clears all keys & values in a dictionary
 print("\n.clear() method")
@@ -9,7 +9,7 @@ sample_dictionary = {
 }
 print(f"Dictionary content: {sample_dictionary}")
 sample_dictionary.clear()
-print(f"Post-operation Dictionary content: {sample_dictionary}")
+print(f"Post-operation check: {sample_dictionary}")
 
 
 # .copy() = makes a copy of a dictionary
