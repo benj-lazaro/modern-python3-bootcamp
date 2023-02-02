@@ -3,6 +3,7 @@
 # Returns the product of the two parameters
 
 def product(multiplicand, multiplier):
+    """product(multiplicand, multiplier) returns the product."""
     return  multiplicand * multiplier
 
 
