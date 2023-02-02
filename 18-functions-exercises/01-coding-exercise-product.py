@@ -7,8 +7,9 @@ def product(multiplicand, multiplier):
     return  multiplicand * multiplier
 
 
-print("product() function")
-user_multiplicand = int(input("Multiplicand: "))
-user_multiplier = int(input("Multiplier: "))
+print("Function: product()")
+print(f"Documentation: {product.__doc__}")
+user_multiplicand = int(input("Enter Multiplicand: "))
+user_multiplier = int(input("Enter Multiplier: "))
 
 print(f"{user_multiplicand} x {user_multiplier} = {product(user_multiplicand, user_multiplier)}")
