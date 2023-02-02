@@ -7,7 +7,7 @@ def last_element(list_data):
     """last_element(list) accepts a list and returns the last item; returns None if the list is empty."""
     if len(list_data) == 0:
         return None
-    return list_data.pop()
+    return list_data[-1]
 
 
 user_list = ["Andrea", "Jessica", "Mica", "Mirai", "Azumi"]
