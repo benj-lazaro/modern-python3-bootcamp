@@ -4,7 +4,7 @@
 
 def multiple_letter_count(string_data):
     """multiple_letter_count(string) accepts a word and returns a dictionary with letters as keys & number of occurences (within the word) as value"""
-    return {string_data[index]: string_data.count(string_data[index]) for index in range(0, len(string_data))}
+    return {letter: string_data.count(letter) for letter in string_data}
 
 print("Function: multiple_letter_count()")
 print(f"Documentation: {multiple_letter_count.__doc__}")
