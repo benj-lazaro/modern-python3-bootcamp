@@ -8,6 +8,7 @@ def compact(list_data):
 
 
 list_sample = [0, 1, 2, "", [], False, {}, None, "All done"]
+
 print("Function: compact()")
 print(f"Documentation: {compact.__doc__}")
 print(f"list_sample: {list_sample}")
