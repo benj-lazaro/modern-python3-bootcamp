@@ -7,9 +7,9 @@
 def combine_words(string_word, **kwargs):
     """combine_word(string, **kwargs) returns a passed string or combination of positional string values."""
     if "prefix" in kwargs.keys():
-        return f"{kwargs['prefix']}" + string_word
+        return kwargs['prefix'] + string_word
     elif "suffix" in kwargs.keys():
-        return string_word + f"{kwargs['suffix']}"
+        return string_word + kwargs['suffix']
     else:
         return string_word
 
