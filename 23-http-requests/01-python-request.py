@@ -1,3 +1,4 @@
+# Setup and demo of the requests module
 import requests
 
 response = requests.get("https://news.ycombinator.com/")
