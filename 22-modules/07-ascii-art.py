@@ -2,6 +2,7 @@
 from pyfiglet import figlet_format
 from termcolor import colored
 
+
 def print_art(message, color):
     """print_art(message, color) prints ASCII art in specified color."""
     official_termcolors = ('red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white')
