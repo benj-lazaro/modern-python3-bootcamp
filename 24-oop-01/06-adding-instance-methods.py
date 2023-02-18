@@ -1,13 +1,13 @@
 # Adding instance methods
 
 class User:
-    # Attributes
+    # Instance Attribute(s)
     def __init__(self, first, last, age):
         self.first_name = first
         self.last_name = last
         self.current_age = age
 
-    # Methods
+    # Instance Method(s)
     def full_name(self):
         """full_name() returns the user's fullname."""
         return f"{self.first_name} {self.last_name}"
