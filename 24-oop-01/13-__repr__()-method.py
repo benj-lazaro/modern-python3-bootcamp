@@ -46,15 +46,15 @@ class User:
         return self.current_age >= 65
 
     def birthday(self):
-        """birthday(self) incrments the value of instance attribute age by 1 and returns a string message."""
+        """birthday(self) increments the value of instance attribute age by 1 and returns a string message."""
         self.current_age += 1
         return f"Happy {self.current_age}th, {self.first_name}!"
 
 
-joe = User.from_string(("Joe,Smith,68"))
-blanca = User.from_string(("Blanca,Lopez,41"))
-yui = User.from_string(("Yui,Nakajima,28"))
-brent = User.from_string(("Brent,Dantes,19"))
+joe = User.from_string("Joe,Smith,68")
+blanca = User.from_string("Blanca,Lopez,41")
+yui = User.from_string("Yui,Nakajima,28")
+brent = User.from_string("Brent,Dantes,19")
 
 print(joe)
 print(blanca)
