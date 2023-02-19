@@ -57,11 +57,11 @@ print(User.display_active_users())
 
 print("\nCalling class method from_string()...")
 print("Statement: User.from_string(('Joe,Smith,68'))")
-User.from_string(("Joe,Smith,68"))
+User.from_string("Joe,Smith,68")
 
 print("\nCalling class method from_string()...")
 print("Statement: User.from_string(('Blanca,Lopez,41'))")
-User.from_string(("Blanca,Lopez,41"))
+User.from_string("Blanca,Lopez,41")
 
 print("\nCalling class method display_active_users()...")
 print("Statement: User.display_active_users()")
@@ -69,7 +69,7 @@ print(User.display_active_users())
 
 print("\nCalling class method from_string()...")
 print("Statement: User.from_string(('Yui,Nakakima,38'))")
-User.from_string(("Yui,Nakajima,28"))
+User.from_string("Yui,Nakajima,28")
 
 print("\nCalling class method from_string()...")
 print("Statement: User.from_string(('Brent,Dantes,19'))")
