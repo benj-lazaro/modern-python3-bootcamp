@@ -10,7 +10,7 @@ class Card:
         self.suit = suit
 
     def __repr__(self):
-        return f"{self.suit} of {self.value}"
+        return f"{self.value} of {self.suit}"
 
 
 # Test code
