@@ -1,6 +1,6 @@
 # Implement a class called Card
-# Each instance should have a suit (Hearts, Diamonds, Clubs or Spades)
-# Each instance should have a value (2 to 10, A, K, Q, or J)
+# Each instance should have an attribute called suit (Hearts, Diamonds, Clubs or Spades)
+# Each instance should have an attribute called value (2 to 10, A, K, Q, or J)
 # The __repr__() should display the card's value and suit (e.g. A of Hearts)
 
 class Card:
