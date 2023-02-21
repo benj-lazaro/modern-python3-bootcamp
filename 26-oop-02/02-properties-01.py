@@ -14,7 +14,7 @@ class Human:
         return self._age
 
     def set_age(self, new_age):
-        """set_age(self, new_age) sets a new value of Private Instance Attribute _age."""
+        """set_age(self, new_age) sets a new value for Private Instance Attribute _age."""
         if new_age >= 0:                # Prevents from explicitly assigning a negative value upon assignment
             self._age = new_age
         else:
