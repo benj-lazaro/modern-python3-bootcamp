@@ -8,7 +8,7 @@ class Character():
         self.level = level
 
 
-# Define a sub-class of Character called NPC
+# Define a subclass of Character called NPC
 # It has an additional instance method called speak()
 class NPC(Character):
     def __init__(self, name, hp, level):
