@@ -4,20 +4,10 @@
 
 def week():
     """week() yields a generator object containing days of the week."""
-    days_dictionary = {
-        1: "Monday",
-        2: "Tuesday",
-        3: "Wednesday",
-        4: "Thursday",
-        5: "Friday",
-        6: "Saturday",
-        7: "Sunday"
-    }
+    days_list = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-    day = 1
-    while day <= 7:
-        yield days_dictionary[day]      # Returns the current value or 'day' of the week
-        day += 1
+    for day in days_list:
+        yield day
 
 
 # Test Code
