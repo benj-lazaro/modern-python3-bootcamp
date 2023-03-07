@@ -3,11 +3,13 @@
 # It should decorate a function by returning two copies of the inner function's return value inside a list
 from functools import wraps
 
+
 def double_return(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         """wrapper(*args, **kwargs) returns the returned value from passed function twice inside a list."""
         return [func(*args, **kwargs)] * 2
+
     return wrapper
 
 
