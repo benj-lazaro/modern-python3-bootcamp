@@ -10,7 +10,7 @@ def ensure_authorized(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         """wrapper(*args, **kwargs) returns the passed function if pre-defined keyword argument value is met."""
-        if ('role', 'admin') in kwargs.items():
+        if kwargs.get("role") == "admin":
             return func(*args, **kwargs)
         return "Unauthorized"
     return wrapper
