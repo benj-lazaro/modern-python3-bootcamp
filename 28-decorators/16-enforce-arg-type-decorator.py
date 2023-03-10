@@ -17,6 +17,7 @@ def enforce(*arg_types):
 
 @enforce(str, int)              # Enforce 1at argument value to be str & 2nd argument value to be int
 def repeat_msg(msg, times):
+    """repeat_msg(str, int) prints a string repeatedly based on the passed numeriacl argument value."""
     for time in range(times):
         print(msg)
 
@@ -24,6 +25,7 @@ def repeat_msg(msg, times):
 
 @enforce(int, int)
 def divide(num1, num2):
+    """divide(int, int) returns the quotient of the passed numerical argument values."""
     print(num1 / num2)
 
 
