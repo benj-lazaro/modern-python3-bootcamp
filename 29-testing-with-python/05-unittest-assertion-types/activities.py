@@ -1,8 +1,9 @@
 # Functions to be tested using unittest
 from random import choice
 
+
 def eat(food, is_healthy):
-    if not isinstance(is_healthy, bool):        # Checks if value of is_healthy is a boolean
+    if not isinstance(is_healthy, bool):  # Checks if value of is_healthy is a boolean
         raise ValueError("is_healthy MUST be a boolean.")
 
     ending = "because YOLO!"
