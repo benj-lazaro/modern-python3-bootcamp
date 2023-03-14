@@ -13,6 +13,7 @@
 import unittest
 from activities import eat, nap
 
+
 class ActivityTests(unittest.TestCase):
     def test_eat_healthy(self):
         """Eat should have a positive message for healthy eating."""
@@ -28,11 +29,9 @@ class ActivityTests(unittest.TestCase):
             "I'm eating pizza, because YOLO!"
         )
 
-
     def test_short_nap(self):
         """Short naps should be refreshing."""
         self.assertEqual(nap(1), "I'm feeling refreshed after my 1 hour nap.")
-
 
     def test_long_nap(self):
         """Long naps should be discouraged."""
