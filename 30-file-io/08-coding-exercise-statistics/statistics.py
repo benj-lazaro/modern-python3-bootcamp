@@ -3,11 +3,11 @@
 # Returns a dictionary with the number lines, words and characters in the file
 
 def statistics(data_file):
-    """statistics(file) returns the number of lines, words and characters of the passed file."""
+    """statistics(file) returns a dictionary containing no. lines, words and characters of the passed file."""
     with open(data_file) as data:
         content = data.read()
 
-        line_count = len(content.split("\n"))
+        line_count = len(content)
         word_count = len(content.split())
         char_count = 0
 
@@ -15,7 +15,11 @@ def statistics(data_file):
             if not char.isspace():
                 char_count += 1
 
-        return f"Lines: {line_count}, Words: {word_count}, Characters: {char_count}"
+        return {
+            "Lines": line_count,
+            "Words": word_count,
+            "Characters": char_count
+        }
 
 
 print(statistics("data.txt"))
