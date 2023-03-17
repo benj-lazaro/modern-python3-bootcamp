@@ -3,7 +3,6 @@
 # Each row is represented as a list
 # Individual data is accessed via index value (see example below)
 # CSV header will be included in the returned list but can be excluded using next()
-# reader() accept a delimeter kwarg in case data is NOT separated by commas (e.g. delimiter="<chracter>")
 
 from csv import reader
 
