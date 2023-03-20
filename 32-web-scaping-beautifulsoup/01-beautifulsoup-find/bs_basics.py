@@ -62,7 +62,7 @@ print(matching_elements)
 print("\n")
 
 # Find and select an elemental tag based on its assigned ID attribute
-# Select element tag with with an attribute ID of 'first'
+# Select element tag with an attribute ID of 'first'
 print("Print the 1st occurrence of an elemental tag with the ID attribute 'first' using find()")
 matching_element = soup.find(id="first")
 print(matching_element)
