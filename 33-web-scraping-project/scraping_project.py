@@ -10,7 +10,7 @@
 # 4. After each incorrect guess, the number of remaining guesses decrements
 #    - remaining guesses = 0. the player loses
 # 5. After each incorrect guess, the player receives a hint
-#    - First hint = author's birth date and location
+#    - First hint = author's birthdate and location
 #    - Succeeding hints = up to the developer
 #      - 1st letter of the author's first or last name
 #      - Number of letters of the author's first or last name
