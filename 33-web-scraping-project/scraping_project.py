@@ -27,61 +27,77 @@ import requests
 BASE_URL = "https://quotes.toscrape.com/"
 
 # Global variable(s)
-all_quotes = []     # Store harvested data from the fetched HTML document
-sleep_value = 2     # Pause between each web page being scrapped; measured in seconds
-url = "/page/1"     # Refers to the current page being processed
+sleep_value = 2  # Pause between each web page being scrapped; measured in seconds
 
-while url:
-    response = requests.get(f"{BASE_URL}{url}")         # Fetch the HTML document
-    print(f"Now scraping {BASE_URL}{url}...")
 
-    soup = BeautifulSoup(response.text, "html.parser")  # Parse the HTML document
-    quote_block = soup.find_all(class_="quote")         # Fetch the element tag with class = 'quote'
+def scrape_quotes():
+    all_quotes = []  # Store harvested data from the fetched HTML document
+    url = "/page/1"  # Refers to the current page being processed
 
-    for quote in quote_block:                           # Access required data & save as a dictionary to the list
-        all_quotes.append({
-            "text": quote.find(class_="text").get_text(),
-            "author": quote.find(class_="author").get_text(),
-            "bio-link": quote.find("a")["href"]
-        })
+    while url:
+        response = requests.get(f"{BASE_URL}{url}")  # Fetch the HTML document
+        print(f"Now scraping {BASE_URL}{url}...")
 
-    next_button = soup.find(class_="next")                          # Check for the existence of a 'Next Page' button
-    url = next_button.find("a")["href"] if next_button else None    # Update url or terminate loop
+        soup = BeautifulSoup(response.text, "html.parser")  # Parse the HTML document
+        quote_block = soup.find_all(class_="quote")  # Fetch the element tag with class = 'quote'
+
+        for quote in quote_block:  # Access required data & save as a dictionary to the list
+            all_quotes.append({
+                "text": quote.find(class_="text").get_text(),
+                "author": quote.find(class_="author").get_text(),
+                "bio-link": quote.find("a")["href"]
+            })
+
+        next_button = soup.find(class_="next")  # Check for the existence of a 'Next Page' button
+        url = next_button.find("a")["href"] if next_button else None  # Update url or terminate loop
+        sleep(sleep_value)
+
+    print("Scraping done...\n")
     sleep(sleep_value)
+    return all_quotes
 
-print("Scraping done...\n")
-sleep(sleep_value)
 
-# Game logic
-quote = choice(all_quotes)
-remaining_guesses = 4
-guess = ""
+def start_game(quotes):
+    quote = choice(quotes)
+    remaining_guesses = 4
+    guess = ""
 
-print(quote["text"])
-print(quote["author"])      # For testing purposes only
+    print(quote["text"])
+    print(quote["author"])  # For testing purposes only
 
-while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
-    guess = str(input(f"Who said this quote? Guesses remaining: {remaining_guesses} \n"))
+    while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
+        guess = str(input(f"Who said this quote? Guesses remaining: {remaining_guesses} \n"))
 
-    if guess.lower() == quote["author"].lower():
-        print("You got it right!")
-        break
+        if guess.lower() == quote["author"].lower():
+            print("You got it right!")
+            break
 
-    remaining_guesses -= 1
+        remaining_guesses -= 1
 
-    if remaining_guesses == 3:
-        response = requests.get(f"{BASE_URL}{quote['bio-link']}")
-        soup = BeautifulSoup(response.text, "html.parser")
+        if remaining_guesses == 3:
+            response = requests.get(f"{BASE_URL}{quote['bio-link']}")
+            soup = BeautifulSoup(response.text, "html.parser")
 
-        birth_date = soup.find(class_="author-born-date").get_text()
-        birth_place = soup.find(class_="author-born-location").get_text()
-        print(f"Here's a hint: The author was born on {birth_date} {birth_place}.")
-    elif remaining_guesses == 2:
-        print(f"Here's a hint: The author's first name starts with {quote['author'][0]}. ")
-    elif remaining_guesses == 1:
-        author_lastname_initial = quote["author"].split(" ")[1][0]  # Selects 2nd list item & it's 1st character
-        print(f"Here's a hint: The author's last name starts with {author_lastname_initial}. ")
+            birth_date = soup.find(class_="author-born-date").get_text()
+            birth_place = soup.find(class_="author-born-location").get_text()
+            print(f"Here's a hint: The author was born on {birth_date} {birth_place}.")
+        elif remaining_guesses == 2:
+            print(f"Here's a hint: The author's first name starts with {quote['author'][0]}. ")
+        elif remaining_guesses == 1:
+            author_lastname_initial = quote["author"].split(" ")[1][0]  # Selects 2nd list item & it's 1st character
+            print(f"Here's a hint: The author's last name starts with {author_lastname_initial}. ")
+        else:
+            print(f"Sorry, you ran out of guesses. The answer was {quote['author']}.")
+
+    play_again = ""
+    while play_again.lower() not in ("y", "yes", "n", "no"):
+        play_again = str(input("Would you like to play again [y/n]? "))
+
+    if play_again.lower() in ("yes", "y"):
+        return start_game(quotes)
     else:
-        print(f"Sorry, you ran out of guesses. The answer was {quote['author']}.")
+        print("Ok. Goodbye.")
 
-print("After while loop")
+
+quotes = scrape_quotes()
+start_game(quotes)
