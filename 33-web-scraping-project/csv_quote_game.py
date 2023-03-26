@@ -2,11 +2,12 @@
 
 from bs4 import BeautifulSoup
 from random import choice
-from  csv import DictReader
+from csv import DictReader
 import requests
 
 # Constant variable(s)
 BASE_URL = "https://quotes.toscrape.com/"
+
 
 def read_quotes(filename):
     """read_quotes(file) reads content of CSV file and return read data as a list."""
@@ -31,6 +32,7 @@ def print_hint(quote, remaining_guesses):
         print(f"Here's a hint: The author's last name starts with {author_lastname_initial}. ")
     else:
         print(f"Sorry, you ran out of guesses. The answer was {quote['author']}.")
+
 
 def start_game(quotes):
     """start_game(list) read the passed list of imported quotes and starts the game."""
