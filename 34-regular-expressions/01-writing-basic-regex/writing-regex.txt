@@ -1,0 +1,11 @@
+NOTE: Tested on pythex (https://pythex.org/)
+
+\d              = select a digit or number (0-9)
+\d\d            = select a 2-digit number
+\w              = select a word character (digit, letter [upper or lowercase] or underscore)
+\s              = select a whitespace character (space, tab, newline)
+\D              = select a NON digit or number character
+\W              = select a NON word character
+\S              = select a NON whitespace character
+.               = select everything EXCEPT a line break
+\s\w\w\w\w\w\s  = selects a 5-letter word; surrounded by whitespace characters
