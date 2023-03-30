@@ -1,0 +1,14 @@
+NOTE: Tested on Pythex (https://pythex.org/)
+
+\sk\w+              = select words that starts with (a whitespace followed by) the letter 'k'
+\w{5}               = select words that are 5 characters long
+\w{9}               = select words that are 9 characters long
+\d{3}\s\d{3}-\d{4}  = selects a pattern of 3 digits, a space, 3 digits, a dash and 4 digits
+\d{3} \d{3}-\d{4}   = selects a pattern of 3 digits, a space, 3 digits, a dash and 4 digits
+\w{5,7}             = select words that are 5 to 7 characters long
+\d{4,}              = selects digits that are 4 or more characters long
+\d{3,}              = selects digits that are 3 or more characters long
+ab*c                = selects a pattern that starts with an 'a', 0 or more 'b' and then a 'c'
+ab*c*d              = selects a patterns that starts with an 'a', 0 or more 'b', 0 or more 'c' and then a 'd'
+kittens?            = selects a word 'kitten' followed by 0 or 1 character (e.g. 's') afterwards
+\d{3} \d{3}-?\d{4}  = selects a pattern of 3 digits, a space, 3 digits, a dash (once) and 4 digits
