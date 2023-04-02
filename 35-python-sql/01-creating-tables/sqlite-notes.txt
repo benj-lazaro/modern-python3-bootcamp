@@ -1,0 +1,44 @@
+To launch sqlite from terminal
+------------------------------
+$ sqlite3
+sqlite>
+
+
+SQLite Data Types
+-----------------
+NULL        = NULL value
+INTEGER     = signed number; stored in bytes
+REAL        = floating-point value
+TEXT        = text string
+BLOB        = blob of data; stored exactly as it was input
+
+
+To create a new database file
+-----------------------------
+Syntax:
+sqlite3 <database_name>.db
+
+Example:
+$ sqlite3 dog_db.db
+sqlite>
+
+NOTE: Automatically creates a file .db on the directory where sqlite was launched from
+
+
+To create a new table
+---------------------
+Syntax:
+create table <table_name> (<field_name> <data_type>, <field_name> <data_type>, ..);
+
+Example:
+sqlite> create table dogs (name text, breed text, age integer);
+
+
+To check the existence of a table
+---------------------------------
+Syntax:
+.tables
+
+Example:
+sqlite> .tables
+
