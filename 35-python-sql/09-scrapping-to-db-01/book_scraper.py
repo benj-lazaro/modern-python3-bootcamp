@@ -1,4 +1,4 @@
-# Book scraper 01 = scrape data from website and save it into a sqlite3 db
+# Boot scraper = scrapes & sanitize data from website and save it to sqlite3 database
 
 # import sqlite3
 import requests
