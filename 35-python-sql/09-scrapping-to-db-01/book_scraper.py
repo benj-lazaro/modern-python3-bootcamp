@@ -1,4 +1,4 @@
-# Boot scraper = scrapes & sanitize data from website and save it to sqlite3 database
+# Boot scraper = scrapes & sanitize data taken from a targeted website & then save it to a sqlite3 database
 
 # import sqlite3
 import requests
