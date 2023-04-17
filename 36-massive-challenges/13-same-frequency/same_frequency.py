@@ -12,9 +12,7 @@ def same_frequency(first_number, second_number):
 
     # Count the occurrence of each digit from the corresponding lists
     count_one = [[item, value_one.count(item)] for item in set(value_one)]
-    print(count_one)
     count_two = [[item, value_two.count(item)] for item in set(value_two)]
-    print(count_two)
 
     # Compare for equality of occurrence
     if count_one == count_two:
