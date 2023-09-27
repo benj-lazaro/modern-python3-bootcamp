@@ -1,0 +1,38 @@
+Introduction to Variables
+-------------------------
+- Variables are like containers that:
+    - Store data
+    - Pulls data out later
+    - Hold different sorts of data (e.g. Boolean, Integer, Float, String, etc.)
+
+- Variables are like mathematical variables
+    - It is a symbol that has a name
+    - It holds a value
+
+- To assign a value in a variable
+    - Python uses the assignment operator =
+    - The variable is located on the left-hand side of the assignment operator
+    - The value is located on the right-hand side of the assignment operator
+
+
+Syntax
+------
+<variable_name> = <value_assigned>
+
+
+Variable as a Value
+-------------------
+- The variable itself can be assigned as a value to another variable
+    - The value of the 1st variable is copied as value to the 2nd variable
+    - If the value of the 1st variable is changed, the value of the 2nd variable is unchanged
+
+
+Multiple Assignments
+--------------------
+- A group of variables can be assigned with initial values on a single line of code
+    - Using the , operator
+
+
+Syntax
+------
+<variable_a>, <variable_b>, <variable_c> = <value_1>, <value_2>, <value_3>

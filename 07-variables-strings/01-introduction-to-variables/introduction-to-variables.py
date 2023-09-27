@@ -4,8 +4,8 @@ x = 100
 khaleesi_mother_of_dragons = 1
 print(khaleesi_mother_of_dragons + x)
 
-# Variable's value can be manipulated without changed
-# As long as the result is not assigned back to the variable
+# A variable's value can be manipulated without being changed in the process
+# As lone as the result is NOT ASSIGNED BACK to the variable
 print("Variable value manipulation")
 num_of_cats = 99
 print(num_of_cats)
