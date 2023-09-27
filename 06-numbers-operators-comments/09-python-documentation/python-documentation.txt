@@ -1,0 +1,12 @@
+Python Documentation
+--------------------
+- A good online resource to learn more and seek answers to questions about Python
+    - Be mindful and make sure to use Python 3 documentation; NOT Python 2
+    - Website (https://docs.python.org/3/)
+
+- Python tutorial is a highly recommended beginner's resource
+    - Website (https://docs.python.org/3/tutorial/index.html)
+
+- When using Google for answers
+    - Be conscious that Python 2 code & documentation is around longer than Python 3
+    - Python 2 related information are likely indexed higher on most search engines
