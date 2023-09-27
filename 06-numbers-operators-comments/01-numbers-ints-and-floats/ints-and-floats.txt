@@ -1,0 +1,10 @@
+Ints and Floats
+---------------
+- Two main types of numbers in Python
+    - Integer           = 4, 57, -10
+    - Floating Point    = 6.1, 1.3333, 0.0
+
+- Use type() to identify if a number is an integer or floating point
+
+- Calculating an integer with a floating point
+    - Evaluates to a floating point
