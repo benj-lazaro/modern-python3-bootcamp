@@ -1,0 +1,18 @@
+Numbers and Math
+----------------
+- Commonly used math operators
+    - Addition          +
+    - Subtraction       -
+    - Multiplication    *
+    - Division          /
+    - Exponentiation    **
+    - Modulo            %
+    - Integer Division  //
+
+- Order of operations (PEMDAS)
+    - Parenthesis
+    - Exponents
+    - Multiplication
+    - Division
+    - Addition
+    - Subtraction
