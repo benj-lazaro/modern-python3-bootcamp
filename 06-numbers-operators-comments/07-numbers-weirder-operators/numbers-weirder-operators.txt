@@ -1,0 +1,17 @@
+Weirder Operators
+-----------------
+- This refers to the math operators:
+    - Exponentiation    **
+    - Modulo            %
+    - Integer Division  //
+
+- Exponentiation raises a number to the given power
+
+- Modulo also known as the Remainder Operator
+    - Performs division
+    - Returns the remainder instead
+    - Often used in identifying if a number is even or odd
+
+- Integer division performs a regular division
+    - Returns a floored or rounded down result
+    - To ensure the the result remains an integer
