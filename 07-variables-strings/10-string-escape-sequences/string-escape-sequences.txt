@@ -1,0 +1,19 @@
+String Escape Sequences
+-----------------------
+- In Python, escape sequences are "metacharacters"
+    - These characters are interpreted by Python to do something special
+
+    \\      = backslash
+    \'      = single quote
+    \"      = double quote
+    \a      = ASCII bell
+    \b      = ASCII backspace
+    \f      = ASCII form feed
+    \n      = ASCII linefeed
+    \r      = ASCII carriage return
+    \t      = ASCII horizontal tab
+    \v      = ASCII vertical tab
+    \000    = character with octal value
+    \x00    = character with hexadecimal value
+
+- Reference (https://docs.python.org/3/reference/lexical_analysis.html#strings)
