@@ -1,0 +1,22 @@
+String Concatenation
+--------------------
+- It basically boils down to adding multiple strings together
+    - Using the + operator
+
+- Concatenating a string with an integer using the + operator
+    - Triggers a TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+- The operator += is a shortcut for re-assigning variables
+    - It basically updates the value stored inside a variable
+    - It is NOT limited to string but on other data types such as int, float
+
+
+Examples
+--------
+# Using the + operator
+name = "Colt"
+name = name + " Steele"
+
+# Using the += operator
+name = "Colt"
+name += " Steele"
