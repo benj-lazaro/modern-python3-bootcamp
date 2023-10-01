@@ -1,4 +1,4 @@
- # Set the message variable equal to any string containing a new-line escape sequence
+# Set the message variable equal to any string containing a new-line escape sequence
 message = "this is a test.\n"
 
 # Add a string to the mountains variable that when printed results in: /\/\/\
