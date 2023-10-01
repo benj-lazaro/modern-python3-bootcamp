@@ -1,0 +1,5 @@
+Double VS Single Quotes
+-----------------------
+- String literals in Python can be declared with either single or double quotes
+    - At the end of the day, it does NOT really matter which is used
+    - As long as, it remains CONSISTENT throughout the code
