@@ -1,0 +1,7 @@
+Special Value None
+------------------
+- The special value None represents the absence of a value
+    - Assignments to None are illegal and triggers a SyntaxError
+    - It is the sole instance of NoneType type
+
+- Reference (https://docs.python.org/3/library/constants.html?highlight=none#None)
