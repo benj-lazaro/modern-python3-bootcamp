@@ -1,0 +1,11 @@
+Dynamic Typing
+--------------
+- Python is a highly flexible about re-assigning the values in a variable to a different data type
+    - This is referred as Dynamic Typing
+    - The data type of a value assigned to a variable can readily changed
+
+- This is the opposite of Statically Typing
+    - The data type of a value assigned to a variable can NOT be changed
+    - These variables are stuck to the originally assigned data type
+    - It will continually expected to be assigned with a value of the same data type
+
