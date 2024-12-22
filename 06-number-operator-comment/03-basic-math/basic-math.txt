@@ -1,0 +1,20 @@
+Basic Math
+----------
+- Python's commonly used Math Operators
+    - Addition              +
+    - Subtraction           -
+    - Multiplication        *
+    - Division              /
+    - Division (integer)    //
+    - Exponentiation        **
+    - Modulo                $
+
+
+ - Python's "Order of Operations"
+    - PEMDAS (highest to lowest)
+        - Parenthesis
+        - Exponentiation
+        - Multiplication
+        - Division
+        - Addition
+        - Subtraction

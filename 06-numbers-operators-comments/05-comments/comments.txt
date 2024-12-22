@@ -1,8 +1,0 @@
-Comments
---------
-- A way to write notes within code that will NOT be executed
-
-
-Syntax
-------
-# <single_line_comment>

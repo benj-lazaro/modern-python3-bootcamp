@@ -1,6 +1,0 @@
-NOTE: Tested on Pythex (https://pythex.org/)
-
-^\d{3} \d{3}-?\d{4}     = select a line that BEGINS with 3 digits, a whitespace, 3 digits, dash (optional) & 4 digits
-^\d{3} \d{3}-?\d{4}$    = select a line that EXACTLY matches with 3 digits, a whitespace, 3 digits, dash (optional)
-                          & 4 digits (BEGINS ^ and ENDS $ with the specified pattern); the ONLY PATTERN in a line
-\b\w+\b                 = select every word (\w+) in a line

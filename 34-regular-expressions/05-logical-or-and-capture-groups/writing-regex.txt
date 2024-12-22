@@ -1,6 +1,0 @@
-NOTE: Tested on Pythex (https://pythex.org/)
-
-(\(\d{3}\)|\d{3}) \d{3} \d{4}           = select 3 digits w/ or w/o () followed by 3 digits, a whitespace & 4 digits
-(Mr\.|Mrs\.) ([a-zA-Z]+ [a-zA-Z]+)      = select first & last names; starts with either Mr. or Mrs. (2 group selection)
-(Mr\.|Mrs\.) ([a-zA-Z]+) ([a-zA-Z]+)    = 3 group captures: Mr. or Mrs., first name, and then last name
-(https?://)([a-zA-Z_-]+\.[a-zA-Z]+)     = capture group URLs from their http or https protocol prefix

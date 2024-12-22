@@ -1,9 +1,0 @@
-Data Type Overview
-------------------
-- Commonly used Python data types include:
-    - bool  = True or False
-    - int   = an integer e.g. 1, 2, 3
-    - str   = a sequence of characters (string) e.g. "Colt"
-    - list  = an ordered sequence of other data types e.g. [1, 2, 3] or ["a", "b", "c"]
-    - dict  = a collection of key-value pairs e.g. {"first_name": "Colt", "last_name": "Steele"}
-
