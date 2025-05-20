@@ -1,15 +1,16 @@
 Ints and Floats
 ---------------
-- Python has two (2) main types of numbers
+- Python has two main types of numbers
     - int (integers)
+        - Whole numbers
         - e.g. 1, 4, -10
 
-        - NOTE: Calculating an int with a float
-            - ALWAYS evaluates to a float
-
     - float (floating point)
+        - Decimal numbers
         - e.g. 6.01, 1.333, 0.0
 
+    - NOTE: Calculating an int with a float
+        - ALWAYS evalutes to float
 
-- Using the function type()
-    - Identifies the data type of a number
+
+- The function type() identify the data type of a value
