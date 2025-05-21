@@ -1,0 +1,9 @@
+Quiz 05: Quick Ints and Floats Quiz
+-----------------------------------
+- Which of the following numbers is NOT a float?
+    - Answer: 0
+
+
+ - What type does the following expression result in?
+    - 1.0 + 4
+    - Answer: Float

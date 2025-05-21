@@ -1,0 +1,6 @@
+Quiz 07: One Question Quiz
+--------------------------
+- What is the result of running the following code:
+    - 1/2 * 2 # + 1
+    - Answer: 1.0
+

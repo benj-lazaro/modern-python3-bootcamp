@@ -1,0 +1,32 @@
+Numbers: Ints and Floats
+------------------------
+- The ways that Python represents numbers
+    - Int (Integer)
+        - Represents whole numbers (e.g. 4, 57, -10)
+        - It consumes less memory than a Float
+
+    - Float (Floating Point)
+        - Represents decimal numbers (e.h. 6.1, 1.3333, 0.9)
+        - It consumes more memory than an Int
+
+    - Complex
+        - Rarely used
+
+    - Long
+        - Rarely used
+
+
+- The Python function "type()"
+    - Returns the type of the specified object
+
+Syntax:
+
+type(<object>, [bases], [dict])
+
+
+- The Python interpreter is NOT just a gloried calculator
+    - It can combine numbers and operators in a single expression
+
+    - NOTE: Performing a mathematical operation between an Int and a Float
+        - If any part of the mathematical expression contains a Float
+        - The end result ALWAYS evaluates to a Float

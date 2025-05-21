@@ -1,0 +1,21 @@
+Quick Note: Comments
+--------------------
+- Comments are a way to write notes inside a code
+    - That will NOT be executed by the Python interpreter
+
+
+- To write a comment
+    - Prefix the comment text with an Octothorpe "#"
+
+Syntax:
+
+# <Comment text>
+
+
+- Comments use case
+    - To remind of things
+        - When the written code is NOT self-explanatory
+        - Quite useful when starting to learn Python
+
+    - To help other developers
+        - To understand what's happening on a specific block of code

@@ -1,6 +1,6 @@
-Basic Math
-----------
-- Python's commonly used Math Operators
+Numbers: Basic Math
+-------------------
+- Commonly used Math Operators
     - Addition              +
     - Subtraction           -
     - Multiplication        *
@@ -9,8 +9,11 @@ Basic Math
     - Exponentiation        **
     - Modulo                $
 
+    - Python's Division operation
+        - It ALWAYS returns a Float
 
- - Python's "Order of Operations"
+
+- Python's mathematical order of operations
     - PEMDAS (highest to lowest)
         - Parenthesis
         - Exponentiation
@@ -18,3 +21,7 @@ Basic Math
         - Division
         - Addition
         - Subtraction
+
+    - To override the order
+        - Enclose the operands and operators within a pair of ( )
+
