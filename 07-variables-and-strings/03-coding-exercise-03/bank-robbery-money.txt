@@ -1,0 +1,11 @@
+Coding Exercise 03: Bank Robbery Money
+--------------------------------------
+- Robbed a bank with some of my friends
+    - Got away with $19,867,324,678,987.99
+    - Have to split it up 5 ways.
+
+
+- Using the provided variable "cash"
+    - Print out the dollar amount each robber gets to keep
+    - Divide the value of "cash" by 5
+    - Print the value
