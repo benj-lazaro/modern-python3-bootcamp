@@ -1,0 +1,5 @@
+Introduction to Python Documentation
+------------------------------------
+- Official Python documentation
+    - Best place to search more about the Python language & its standard library
+    - Website (https://docs.python.org/3/)
