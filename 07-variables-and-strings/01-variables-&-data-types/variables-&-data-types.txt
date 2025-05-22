@@ -1,0 +1,10 @@
+Variables & Data Types
+----------------------
+- This section will cover
+    - Understand how to assign (values to) and use variables
+    - Learn about variable naming restrictions & conventions
+    - Learn & use different data types available in Python
+    - Why Python is called a dynamically-typed language
+    - Understand how to convert data types
+    - Learn the ins and outs of the data type String
+    - Build a program that gets user input
