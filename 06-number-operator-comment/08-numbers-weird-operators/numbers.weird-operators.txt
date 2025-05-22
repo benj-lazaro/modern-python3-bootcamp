@@ -1,0 +1,23 @@
+Numbers: Weird Operators
+------------------------
+- The exponentiation operator (**)
+    - Takes two numbers
+    - Raises a number (prefix) to a given power (suffix)
+
+
+- The modulo operator (%)
+    - Takes two numbers
+    - Divides the numbers
+    - Returns ONLY the remainder part
+
+    - NOTE: Referred to as the remainder operator
+
+    - Common use case
+        - Figuring out if a number is even or odd
+
+
+- The integer division (//)
+    - Takes two numbers
+    - Divides the numbers
+    - It floors (i.e. rounds down) and returns ONLY the integer part
+    - Omitting the decimal part
