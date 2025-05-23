@@ -1,0 +1,22 @@
+Variable Naming Restrictions & Conventions
+------------------------------------------
+- In Python, variable names have the following restrictions
+    - It MUST start with a letter or underscore
+    - Rest of the name MUST consist of letter, numbers or underscores
+    - Names are case-sensitive
+
+
+- Standard style conventions for naming variables
+    - Variables should be "snake_case"
+        - Implementing an underscore between words
+
+    -  Variable should be written in lowercase with some exceptions
+        - A constant is written in uppercased "snake_case"
+            -e.g. PI
+
+        - A class is written in upper "CamelCase"
+            - e.g. ShoppingCart
+
+        - A private variable is written with a starting & ending dunder
+            - Dunder = double underscore characters (__)
+            - e.g. __no_touchy__
