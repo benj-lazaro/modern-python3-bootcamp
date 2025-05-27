@@ -1,0 +1,10 @@
+What The Heck is Dynamic Typing
+-------------------------------
+- Python is a Dynamically Typed programming language
+    - It allows a variable to readily change
+        - The data type of its assigned value at any point of the program execution
+
+
+- Static Typing is the opposite
+    - It prevents a variable from readily changing
+        - The data type of its (initially) assigned value
