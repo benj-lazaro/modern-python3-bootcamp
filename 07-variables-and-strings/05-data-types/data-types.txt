@@ -1,0 +1,13 @@
+Data Types
+----------
+- In any variable assignment
+    - The assigned value MUST be a valid data type
+
+
+- The following commonly used Data Types of Python
+    - bool      = boolean value (e.g. True, False)
+    - int       = numbers without a decimal point (e.g. 1, 2, 3)
+    - float     = numbers with a decimal point (e.g. 3.1415)
+    - str       = sequence of Unicode characters (e.g. "Colt")
+    - list      = ordered sequence of various data type values (e.g. [1, 2, 3])
+    - dict      = collection of key:value pairs (e.g. {"first_name": "Colt", "last_name": "Steele"})
